@@ -1,0 +1,527 @@
+Function,Description
+_abnormal_termination,Returns true if a __try/__finally block is terminating due to an exception.
+abort,Terminates the process immediately without flushing buffers.
+abs,Calculates the absolute value of an integer.
+_access,Checks the file-permission settings for a specific file or directory.
+_acmdln_dll,Pointer to the command-line string for the process.
+acos,Calculates the arccosine.
+_aexit_rtn_dll,Internal pointer to the exit return function.
+_amsg_exit,Displays a runtime error message and exits the program.
+__argc_dll,Pointer to the count of command-line arguments.
+__argv_dll,Pointer to the array of command-line argument strings.
+asctime,Converts a tm struct to a character string.
+asin,Calculates the arcsine.
+_assert,Evaluates an expression and prints a diagnostic message if false.
+atan,Calculates the arctangent.
+atan2,Calculates the arctangent of y/x.
+atexit,Registers a function to be called at program termination.
+atof,Converts a string to a double-precision floating-point value.
+atoi,Converts a string to an integer.
+atol,Converts a string to a long integer.
+_basemajor_dll,Global variable for the major version of the base OS.
+_baseminor_dll,Global variable for the minor version of the base OS.
+_baseversion_dll,Global variable for the base OS version.
+_beep,Generates a speaker tone (Win32 wrapper).
+_beginthread,Creates a new thread in the same process address space.
+bsearch,Performs a binary search of a sorted array.
+_c_exit,Performs C cleanup but returns to the caller without exiting.
+_cabs,Calculates the absolute value of a complex number.
+calloc,Allocates an array in memory and initializes elements to zero.
+ceil,Calculates the ceiling of a value.
+_cexit,Performs C cleanup and terminates the process.
+_cgets,Reads a string from the console.
+_chdir,Changes the current working directory.
+_chdrive,Changes the current working drive.
+_chgsign,Reverses the sign of a floating-point value.
+_chmod,Changes the file-access permissions.
+_chsize,Changes the size of a file.
+_CIacos,Internal intrinsic for arccosine.
+_CIasin,Internal intrinsic for arcsine.
+_CIatan,Internal intrinsic for arctangent.
+_CIatan2,Internal intrinsic for arctangent (y,x).
+_CIcos,Internal intrinsic for cosine.
+_CIcosh,Internal intrinsic for hyperbolic cosine.
+_CIexp,Internal intrinsic for exponential.
+_CIfmod,Internal intrinsic for floating-point remainder.
+_CIlog,Internal intrinsic for natural logarithm.
+_CIlog10,Internal intrinsic for base-10 logarithm.
+_CIpow,Internal intrinsic for exponentiation.
+_CIsin,Internal intrinsic for sine.
+_CIsinh,Internal intrinsic for hyperbolic sine.
+_CIsqrt,Internal intrinsic for square root.
+_CItan,Internal intrinsic for tangent.
+_CItanh,Internal intrinsic for hyperbolic tangent.
+clearerr,Resets the error and end-of-file indicators for a stream.
+_clearfp,Resets and returns the floating-point status word.
+clock,Returns the processor time used by the process.
+_close,Closes a file associated with a file descriptor.
+_commit,Flushes a file's cache to disk.
+_commode_dll,Global variable setting the default file translation mode.
+_control87,Gets and sets the floating-point control word.
+_controlfp,Gets and sets the floating-point control word (platform independent).
+_copysign,Returns a value with the magnitude of one argument and sign of another.
+cos,Calculates the cosine.
+cosh,Calculates the hyperbolic cosine.
+_cprintf,Formats and prints to the console.
+_cpumode_dll,Global variable indicating the CPU mode.
+_cputs,Outputs a string to the console.
+_creat,Creates a new file or overwrites an existing one.
+_cscanf,Reads formatted data from the console.
+ctime,Converts a time_t value to a string.
+_ctype,Global array containing character classification information.
+_cwait,Waits for a child process to terminate.
+_daylight_dll,Global variable for daylight savings time offset.
+difftime,Calculates the difference between two times.
+div,Computes the quotient and remainder of two integers.
+__dllonexit,Internal function used to register exit routines within a DLL.
+__doserrno,Returns the last error code returned by a DOS/system call.
+_dup,Creates a second file descriptor for an open file.
+_dup2,Reassigns a file descriptor.
+_ecvt,Converts a double to a string.
+_endthread,Terminates a thread created by _beginthread.
+_environ_dll,Pointer to the environment table.
+_eof,Checks for end-of-file on a file descriptor.
+_errno,Returns the address of the system error number.
+_except_handler2,Internal SEH (Structured Exception Handling) handler.
+_execl,Loads and executes a new process with argument list.
+_execle,Loads and executes a new process with environment.
+_execlp,Loads and executes a new process using the PATH variable.
+_execlpe,Loads and executes a new process with PATH and environment.
+_execv,Loads and executes a new process with argument array.
+_execve,Loads and executes a new process with array and environment.
+_execvp,Loads and executes a new process with PATH and array.
+_execvpe,Loads and executes a new process with PATH, array, and environment.
+_exit,Terminates the process immediately without cleanup.
+exit,Terminates the process after performing standard cleanup.
+exp,Calculates the exponential function.
+_expand,Changes the size of a memory block without moving it.
+fabs,Calculates the absolute value of a floating-point number.
+fclose,Closes a stream.
+_fcloseall,Closes all open streams except stdin, stdout, and stderr.
+_fcvt,Converts a floating-point number to a string.
+_fdopen,Associates a stream with a file descriptor.
+feof,Tests for end-of-file on a stream.
+ferror,Tests for an error on a stream.
+fflush,Flushes a stream's buffer.
+fgetc,Reads a character from a stream.
+_fgetchar,Reads a character from stdin.
+fgetpos,Gets the stream's position indicator.
+fgets,Reads a string from a stream.
+fgetwc,Reads a wide character from a stream.
+_fgetwchar,Reads a wide character from stdin.
+_filbuf,Internal function to fill a buffer for a stream.
+_fileinfo_dll,Global variable for passing file info to child processes.
+_filelength,Gets the length of a file in bytes.
+_fileno,Gets the file descriptor associated with a stream.
+_findclose,Closes a file-search handle.
+_findfirst,Finds the first instance of a filename matching a spec.
+_findnext,Finds the next instance of a filename matching a spec.
+_finite,Checks if a floating-point value is finite.
+floor,Calculates the floor of a value.
+_flsbuf,Internal function to flush a buffer for a stream.
+_flushall,Flushes all open buffers to their respective files.
+fmod,Calculates the floating-point remainder.
+_fmode_dll,Global variable for default file translation mode.
+fopen,Opens a file.
+_fpclass,Returns the floating-point classification of a value.
+__fpecode,Internal function returning floating-point error code.
+_fpieee_flt,IEEE floating-point exception filter.
+_fpreset,Resets the floating-point package.
+fprintf,Writes formatted data to a stream.
+fputc,Writes a character to a stream.
+_fputchar,Writes a character to stdout.
+fputs,Writes a string to a stream.
+fputwc,Writes a wide character to a stream.
+_fputwchar,Writes a wide character to stdout.
+fread,Reads data from a stream.
+free,Deallocates a block of memory.
+freopen,Reassigns a stream to a different file.
+frexp,Splits a floating-point number into mantissa and exponent.
+fscanf,Reads formatted data from a stream.
+fseek,Moves the file pointer to a specific location.
+fsetpos,Sets the stream's position indicator.
+_fsopen,Opens a file with file sharing.
+_fstat,Gets information about an open file.
+ftell,Gets the current position of the file pointer.
+_ftime,Gets the current system time.
+_ftol,Internal function to convert float to long.
+_fullpath,Converts a relative path to an absolute path.
+_futime,Sets the modification time on an open file.
+fwprintf,Writes formatted wide-character data to a stream.
+fwrite,Writes data to a stream.
+fwscanf,Reads formatted wide-character data from a stream.
+_gcvt,Converts a floating-point number to a string.
+_get_osfhandle,Returns the Win32 OS handle associated with a file descriptor.
+getc,Reads a character from a stream.
+_getch,Reads a character from the console without echo.
+getchar,Reads a character from stdin.
+_getche,Reads a character from the console with echo.
+_getcwd,Gets the current working directory.
+_getdcwd,Gets the current working directory on a specified drive.
+_getdiskfree,Gets information about disk space.
+_getdllprocaddr,Internal wrapper for GetProcAddress.
+_getdrive,Gets the current drive number.
+_getdrives,Returns a bitmask of available disk drives.
+getenv,Gets a value from the environment table.
+__GetMainArgs,Internal function to parse command line and environment for main().
+_getpid,Gets the process ID.
+gets,Reads a line from stdin (unsafe).
+_getsystime,Gets the system time.
+_getw,Reads a word (integer) from a stream.
+_global_unwind2,Internal exception handling cleanup function.
+gmtime,Converts a time_t value to a tm struct (UTC).
+_heapchk,Runs consistency checks on the heap.
+_heapmin,Releases unused heap memory to the operating system.
+_heapset,Fills heap free blocks with a specific value.
+_heapwalk,Traverses the heap and returns info about the next entry.
+_HUGE_dll,Global variable representing a large floating-point value.
+_hypot,Calculates the hypotenuse of a right triangle.
+_initterm,Internal function to call a table of initialization routines.
+_iob,Array of FILE structures for standard streams.
+is_wctype,Determines if a wide character has a specified property.
+isalnum,Checks for alphanumeric character.
+isalpha,Checks for alphabetic character.
+__isascii,Checks for ASCII character.
+_isatty,Checks if a file descriptor is associated with a character device.
+iscntrl,Checks for control character.
+__iscsym,Checks for valid C identifier character.
+__iscsymf,Checks for valid C identifier first character.
+_isctype,Checks a character for specific types.
+isdigit,Checks for digit.
+isgraph,Checks for printable character excluding space.
+isleadbyte,Checks if a byte is the lead byte of a multibyte character.
+islower,Checks for lowercase character.
+_ismbbalnum,Checks if multibyte character is alphanumeric.
+_ismbbalpha,Checks if multibyte character is alphabetic.
+_ismbbgraph,Checks if multibyte character is graphical.
+_ismbbkalnum,Checks if multibyte character is a non-ASCII text symbol.
+_ismbbkana,Checks if multibyte character is Katakana.
+_ismbbkpunct,Checks if multibyte character is non-ASCII punctuation.
+_ismbblead,Checks if byte is a lead byte.
+_ismbbprint,Checks if multibyte character is printable.
+_ismbbpunct,Checks if multibyte character is punctuation.
+_ismbbtrail,Checks if byte is a trail byte.
+_ismbcalpha,Checks if a multibyte character is alphabetic.
+_ismbcdigit,Checks if a multibyte character is a digit.
+_ismbchira,Checks if a multibyte character is Hiragana.
+_ismbckata,Checks if a multibyte character is Katakana.
+_ismbcl0,Checks if a multibyte character is a CP932 level 0 char.
+_ismbcl1,Checks if a multibyte character is a CP932 level 1 char.
+_ismbcl2,Checks if a multibyte character is a CP932 level 2 char.
+_ismbclegal,Checks if a multibyte character is a valid sequence.
+_ismbclower,Checks if a multibyte character is lowercase.
+_ismbcprint,Checks if a multibyte character is printable.
+_ismbcspace,Checks if a multibyte character is whitespace.
+_ismbcsymbol,Checks if a multibyte character is a symbol.
+_ismbcupper,Checks if a multibyte character is uppercase.
+_ismbslead,Checks if a pointer points to a lead byte.
+_ismbstrail,Checks if a pointer points to a trail byte.
+_isnan,Checks if a value is "Not a Number" (NaN).
+isprint,Checks for printable character.
+ispunct,Checks for punctuation character.
+isspace,Checks for whitespace character.
+isupper,Checks for uppercase character.
+iswalnum,Checks for wide alphanumeric character.
+iswalpha,Checks for wide alphabetic character.
+iswascii,Checks for wide ASCII character.
+iswcntrl,Checks for wide control character.
+iswctype,Checks for wide character property.
+iswdigit,Checks for wide digit.
+iswgraph,Checks for wide graphical character.
+iswlower,Checks for wide lowercase character.
+iswprint,Checks for wide printable character.
+iswpunct,Checks for wide punctuation character.
+iswspace,Checks for wide whitespace character.
+iswupper,Checks for wide uppercase character.
+iswxdigit,Checks for wide hexadecimal digit.
+isxdigit,Checks for hexadecimal digit.
+_itoa,Converts an integer to a string.
+_itow,Converts an integer to a wide-character string.
+_j0,Calculates Bessel function of the first kind, order 0.
+_j1,Calculates Bessel function of the first kind, order 1.
+_jn,Calculates Bessel function of the first kind, order n.
+_kbhit,Checks the console for keyboard input.
+labs,Calculates the absolute value of a long integer.
+ldexp,Calculates a real number from mantissa and exponent.
+ldiv,Computes the quotient and remainder of two long integers.
+_lfind,Performs a linear search for a key.
+_loaddll,Internal wrapper to load a DLL.
+_local_unwind2,Internal exception handling function for local unwinding.
+localeconv,Gets detailed information on locale settings.
+localtime,Converts a time_t value to a tm struct (Local Time).
+_locking,Locks or unlocks bytes of a file.
+log,Calculates the natural logarithm.
+log10,Calculates the base-10 logarithm.
+_logb,Extracts the exponent of a floating-point value.
+longjmp,Restores the stack environment and execution priority.
+_lrotl,Rotates an unsigned long to the left.
+_lrotr,Rotates an unsigned long to the right.
+_lsearch,Performs a linear search; adds the key if not found.
+_lseek,Repositions a file descriptor's pointer.
+_ltoa,Converts a long integer to a string.
+_ltow,Converts a long integer to a wide-character string.
+_makepath,Creates a path string from components.
+malloc,Allocates a block of memory.
+_matherr,Handles mathematical errors.
+__mb_cur_max_dll,Global variable for maximum bytes in a multibyte character.
+_mbbtombc,Converts a single-byte character to a multibyte character.
+_mbbtype,Returns the type of a multibyte character byte.
+_mbccpy,Copies a multibyte character.
+_mbcjistojms,Converts JIS code to Shift-JIS.
+_mbcjmstojis,Converts Shift-JIS to JIS code.
+_mbclen,Returns the length of a multibyte character.
+_mbctohira,Converts a multibyte character to Hiragana.
+_mbctokata,Converts a multibyte character to Katakana.
+_mbctolower,Converts a multibyte character to lowercase.
+_mbctombb,Converts a multibyte character to a single-byte character.
+_mbctoupper,Converts a multibyte character to uppercase.
+_mbctype,Global array for multibyte character classification.
+mblen,Returns the length of a multibyte character.
+_mbsbtype,Returns the type of a byte within a multibyte string.
+_mbscat,Concatenates two multibyte strings.
+_mbschr,Finds the first occurrence of a multibyte character in a string.
+_mbscmp,Compares two multibyte strings.
+_mbscpy,Copies a multibyte string.
+_mbscspn,Finds the first multibyte character in a string from a set.
+_mbsdec,Decrements a multibyte string pointer.
+_mbsdup,Duplicates a multibyte string.
+_mbsicmp,Compares two multibyte strings (case-insensitive).
+_mbsinc,Increments a multibyte string pointer.
+_mbslen,Returns the number of multibyte characters in a string.
+_mbslwr,Converts a multibyte string to lowercase.
+_mbsnbcat,Concatenates n bytes to a multibyte string.
+_mbsnbcmp,Compares n bytes of two multibyte strings.
+_mbsnbcnt,Returns the number of characters within n bytes.
+_mbsnbcpy,Copies n bytes of a multibyte string.
+_mbsnbicmp,Compares n bytes of two multibyte strings (case-insensitive).
+_mbsnbset,Sets n bytes of a multibyte string to a character.
+_mbsncat,Concatenates n characters to a multibyte string.
+_mbsnccnt,Returns the number of bytes within n characters.
+_mbsncmp,Compares n characters of two multibyte strings.
+_mbsncpy,Copies n characters of a multibyte string.
+_mbsnextc,Returns the next character in a multibyte string.
+_mbsnicmp,Compares n characters of two multibyte strings (case-insensitive).
+_mbsninc,Increments a multibyte string pointer by n characters.
+_mbsnset,Sets n characters of a multibyte string to a character.
+_mbspbrk,Finds the first multibyte character from a set in a string.
+_mbsrchr,Finds the last occurrence of a multibyte character in a string.
+_mbsrev,Reverses a multibyte string.
+_mbsset,Sets all characters in a multibyte string to a character.
+_mbsspn,Finds the length of a multibyte string prefix of characters from a set.
+_mbsspnp,Returns a pointer to the first multibyte character not in a set.
+_mbsstr,Finds a multibyte substring.
+_mbstok,Finds the next multibyte token in a string.
+mbstowcs,Converts a multibyte string to a wide-character string.
+_mbstrlen,Returns the number of characters in a multibyte string.
+_mbsupr,Converts a multibyte string to uppercase.
+mbtowc,Converts a multibyte character to a wide character.
+_memccpy,Copies bytes until a character is found or n bytes are copied.
+memchr,Finds a character in a memory block.
+memcmp,Compares two memory blocks.
+memcpy,Copies a memory block.
+_memicmp,Compares two memory blocks (case-insensitive).
+memmove,Moves a memory block (handles overlap).
+memset,Sets a memory block to a specific character.
+_mkdir,Creates a new directory.
+_mktemp,Creates a unique filename.
+mktime,Converts a tm struct to time_t.
+modf,Splits a floating-point value into fractional and integer parts.
+_msize,Returns the size of a memory block allocated in the heap.
+_nextafter,Returns the next representable neighbor of a floating-point value.
+_onexit,Registers a function to be called at exit (Microsoft version).
+_open,Opens a file for reading or writing (low-level).
+_open_osfhandle,Associates a file descriptor with an existing Win32 handle.
+void operator delete(void *),Deallocates memory (C++).
+void * operator new(unsigned int),Allocates memory (C++).
+_osmajor_dll,Global variable for OS major version.
+_osminor_dll,Global variable for OS minor version.
+_osmode_dll,Global variable for OS mode.
+_osver_dll,Global variable for OS version.
+_osversion_dll,Global variable for OS version.
+_pclose,Closes a pipe created by _popen.
+_pctype_dll,Pointer to the character classification table.
+perror,Prints a system error message.
+_pgmptr_dll,Pointer to the full path of the executable.
+_pipe,Creates a pipe for interprocess communication.
+_popen,Creates a pipe and executes a command.
+pow,Calculates x raised to the power of y.
+printf,Prints formatted data to stdout.
+_purecall,Error handler for pure virtual function calls.
+putc,Writes a character to a stream.
+_putch,Writes a character to the console.
+putchar,Writes a character to stdout.
+_putenv,Adds or modifies an environment variable.
+puts,Writes a string to stdout.
+_putw,Writes a word (integer) to a stream.
+_pwctype_dll,Pointer to the wide-character classification table.
+__pxcptinfoptrs,Internal function returning pointer to exception info.
+qsort,Performs a quick sort.
+raise,Sends a signal to the executing program.
+rand,Generates a pseudorandom number.
+_read,Reads data from a file descriptor.
+realloc,Resizes a memory block.
+remove,Deletes a file.
+rename,Renames a file or directory.
+rewind,Sets the file pointer to the beginning of a stream.
+_rmdir,Removes a directory.
+_rmtmp,Removes temporary files.
+_rotl,Rotates an unsigned integer to the left.
+_rotr,Rotates an unsigned integer to the right.
+_scalb,Scales a floating-point value by a power of 2.
+scanf,Reads formatted data from stdin.
+_searchenv,Searches for a file using environment paths.
+_set_new_handler,Sets a handler for memory allocation failure.
+setbuf,Controls stream buffering.
+_seterrormode,Controls how the CRT handles critical errors.
+_setjmp,Saves the current execution context for non-local jumps.
+setlocale,Sets or gets the current locale.
+_setmode,Sets the file translation mode.
+_setsystime,Sets the system time.
+setvbuf,Controls stream buffering and buffer size.
+signal,Sets signal handling for a specific signal.
+sin,Calculates the sine.
+sinh,Calculates the hyperbolic sine.
+_sleep,Suspends execution for a specified interval.
+_snprintf,Writes formatted data to a string with length limit.
+_snwprintf,Writes formatted wide-character data to a string with length limit.
+_sopen,Opens a file with file sharing (low-level).
+_spawnl,Creates and executes a new process (list).
+_spawnle,Creates and executes a new process (list/env).
+_spawnlp,Creates and executes a new process (list/PATH).
+_spawnlpe,Creates and executes a new process (list/PATH/env).
+_spawnv,Creates and executes a new process (array).
+_spawnve,Creates and executes a new process (array/env).
+_spawnvp,Creates and executes a new process (array/PATH).
+_spawnvpe,Creates and executes a new process (array/PATH/env).
+_splitpath,Splits a path into its components.
+sprintf,Writes formatted data to a string.
+sqrt,Calculates the square root.
+srand,Sets the seed for the pseudorandom number generator.
+sscanf,Reads formatted data from a string.
+_stat,Gets information about a file.
+_statusfp,Gets the floating-point status word.
+strcat,Concatenates two strings.
+strchr,Finds the first occurrence of a character in a string.
+strcmp,Compares two strings.
+_strcmpi,Compares two strings (case-insensitive).
+strcoll,Compares two strings using locale-specific information.
+strcpy,Copies a string.
+strcspn,Finds the length of a string prefix not containing characters from a set.
+_strdate,Returns the current system date as a string.
+_strdec,Decrements a string pointer.
+_strdup,Duplicates a string.
+_strerror,Returns a system error message string.
+strerror,Returns a pointer to a system error message string.
+strftime,Formats a time string.
+_stricmp,Compares two strings (case-insensitive).
+_stricoll,Compares two strings using locale-specific info (case-insensitive).
+_strinc,Increments a string pointer.
+strlen,Returns the length of a string.
+_strlwr,Converts a string to lowercase.
+strncat,Concatenates n characters to a string.
+strncmp,Compares n characters of two strings.
+_strncnt,Returns the number of characters in n bytes.
+strncpy,Copies n characters of a string.
+_strnextc,Returns the next character in a string.
+_strnicmp,Compares n characters of two strings (case-insensitive).
+_strninc,Increments a string pointer by n characters.
+_strnset,Sets n characters of a string to a character.
+strpbrk,Finds the first character from a set in a string.
+strrchr,Finds the last occurrence of a character in a string.
+_strrev,Reverses a string.
+_strset,Sets all characters in a string to a character.
+strspn,Finds the length of a string prefix consisting of characters from a set.
+_strspnp,Returns a pointer to the first character not in a set.
+strstr,Finds a substring.
+_strtime,Returns the current system time as a string.
+strtod,Converts a string to a double.
+strtok,Finds the next token in a string.
+strtol,Converts a string to a long integer.
+strtoul,Converts a string to an unsigned long integer.
+_strupr,Converts a string to uppercase.
+strxfrm,Transforms a string based on locale-specific information.
+_swab,Swaps adjacent bytes.
+swprintf,Writes formatted wide-character data to a string.
+swscanf,Reads formatted wide-character data from a string.
+_sys_errlist,Global array of system error messages.
+_sys_nerr_dll,Global variable for the number of system error messages.
+system,Executes a shell command.
+tan,Calculates the tangent.
+tanh,Calculates the hyperbolic tangent.
+_tell,Gets the current position of the file pointer (low-level).
+_tempnam,Generates a temporary filename in a specified directory.
+__threadhandle,Internal function returning the current thread handle.
+__threadid,Internal function returning the current thread ID.
+time,Gets the current system time.
+_timezone_dll,Global variable for the time zone offset.
+tmpfile,Creates a temporary file.
+tmpnam,Generates a unique temporary filename.
+__toascii,Converts a character to ASCII.
+_tolower,Converts a character to lowercase (macro/internal).
+tolower,Converts a character to lowercase.
+_toupper,Converts a character to uppercase (macro/internal).
+toupper,Converts a character to uppercase.
+towlower,Converts a wide character to lowercase.
+towupper,Converts a wide character to uppercase.
+_tzname,Global array of time zone names.
+_tzset,Sets time environment variables based on TZ environment variable.
+_ultoa,Converts an unsigned long to a string.
+_ultow,Converts an unsigned long to a wide-character string.
+_umask,Sets the default file-permission mask.
+ungetc,Pushes a character back onto a stream.
+_ungetch,Pushes a character back onto the console.
+ungetwc,Pushes a wide character back onto a stream.
+_unlink,Deletes a file.
+_unloaddll,Internal wrapper to unload a DLL.
+_utime,Sets the modification time for a file.
+vfprintf,Writes formatted data to a stream using a pointer to arguments.
+vfwprintf,Writes formatted wide-character data to a stream using a pointer to arguments.
+vprintf,Writes formatted data to stdout using a pointer to arguments.
+_vsnprintf,Writes formatted data to a string with length limit (va_list).
+_vsnwprintf,Writes formatted wide data to a string with length limit (va_list).
+vsprintf,Writes formatted data to a string using a pointer to arguments.
+vswprintf,Writes formatted wide data to a string using a pointer to arguments.
+vwprintf,Writes formatted wide data to stdout using a pointer to arguments.
+wcscat,Concatenates two wide-character strings.
+wcschr,Finds the first occurrence of a wide character in a string.
+wcscmp,Compares two wide-character strings.
+wcscoll,Compares two wide-character strings using locale information.
+wcscpy,Copies a wide-character string.
+wcscspn,Finds the length of a wide-string prefix not in a set.
+_wcsdup,Duplicates a wide-character string.
+wcsftime,Formats a wide-character time string.
+_wcsicmp,Compares two wide-character strings (case-insensitive).
+_wcsicoll,Compares two wide strings using locale info (case-insensitive).
+wcslen,Returns the length of a wide-character string.
+_wcslwr,Converts a wide-character string to lowercase.
+wcsncat,Concatenates n wide characters to a string.
+wcsncmp,Compares n wide characters of two strings.
+wcsncpy,Copies n wide characters of a string.
+_wcsnicmp,Compares n wide characters of two strings (case-insensitive).
+_wcsnset,Sets n wide characters of a string to a character.
+wcspbrk,Finds the first wide character from a set in a string.
+wcsrchr,Finds the last occurrence of a wide character in a string.
+_wcsrev,Reverses a wide-character string.
+_wcsset,Sets all characters in a wide-character string to a character.
+wcsspn,Finds the length of a wide-string prefix consisting of characters from a set.
+wcsstr,Finds a wide-character substring.
+wcstod,Converts a wide-character string to a double.
+wcstok,Finds the next wide-character token in a string.
+wcstol,Converts a wide-character string to a long integer.
+wcstombs,Converts a wide-character string to a multibyte string.
+wcstoul,Converts a wide-character string to an unsigned long integer.
+_wcsupr,Converts a wide-character string to uppercase.
+wcsxfrm,Transforms a wide-character string based on locale information.
+wctomb,Converts a wide character to a multibyte character.
+_winmajor_dll,Global variable for Windows major version.
+_winminor_dll,Global variable for Windows minor version.
+_winver_dll,Global variable for Windows version.
+wprintf,Prints formatted wide-character data to stdout.
+_write,Writes data to a file descriptor (low-level).
+wscanf,Reads formatted wide-character data from stdin.
+_wtoi,Converts a wide-character string to an integer.
+_wtol,Converts a wide-character string to a long integer.
+_XcptFilter,Internal function to filter structured exceptions.
+_y0,Calculates Bessel function of the second kind, order 0.
+_y1,Calculates Bessel function of the second kind, order 1.
+_yn,Calculates Bessel function of the second kind, order n.
