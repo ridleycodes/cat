@@ -31,14 +31,14 @@ MACRO(TARGET_ARCHITECTURE output_var)
             SET(ARCH "${ARCH} ppc64")
         ENDIF(osx_arch_ppc64)
     ELSE(APPLE AND CMAKE_OSX_ARCHITECTURES)
-        CONFIGURE_FILE("${CMAKE_CURRENT_SOURCE_DIR}/cmake/arch.c" "${CMAKE_BINARY_DIR}/arch.c" COPYONLY)
+        CONFIGURE_FILE(${CMAKE_TARGET_ARCH_FILE} "${CMAKE_BINARY_DIR}/arch.c" COPYONLY)
         TRY_COMPILE(
             compile_result_unused
             "${CMAKE_BINARY_DIR}"
             "${CMAKE_BINARY_DIR}/arch.c"
             OUTPUT_VARIABLE COMPILER_OUTPUT
         )
-        
+
         STRING(REGEX MATCH "cmake_ARCH ([a-zA-Z0-9_]+)" ARCH_MATCH "${COMPILER_OUTPUT}")
 
         IF(ARCH_MATCH)
