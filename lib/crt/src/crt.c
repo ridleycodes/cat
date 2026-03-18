@@ -1,3 +1,4 @@
+#ifdef __LEGACY_CRT_CONSOLE_SUBSYSTEM
 #if !defined (_MSC_VER) || _MSC_VER > 1200
 #ifndef _FILE_DEFINED
 #define _FILE_DEFINED
@@ -24,7 +25,7 @@ FILE* (__cdecl * _imp____acrt_iob_func)(unsigned) = __acrt_iob_func;
 FILE* (__cdecl * __imp___acrt_iob_func)(unsigned) = __acrt_iob_func;
 FILE* (__cdecl * __imp____acrt_iob_func)(unsigned) = __acrt_iob_func;
 #endif /* !defined (_MSC_VER) || _MSC_VER > 1200 */
-
+#endif /* __LEGACY_CRT_CONSOLE_SUBSYSTEM */
 #ifdef _MSC_VER
 int _fltused = 1;
 #endif /* _MSC_VER */
@@ -64,7 +65,6 @@ void __cdecl mainCRTStartup(void) {
 }
 #elif defined(__LEGACY_CRT_WINDOWS_SUBSYSTEM)
 #if	!defined(_MSC_VER) || _MSC_VER > 1000
-#pragma comment(lib, "kernel32.lib")
 #endif /* !defined(_MSC_VER) || _MSC_VER > 1000 */
 extern int __stdcall WinMain(void* hInstance, void* hPrevInstance, const char *lpCmdLine, int nCmdShow);
 extern __declspec(dllimport) void* __stdcall GetModuleHandleA(const char* lpModuleName);
