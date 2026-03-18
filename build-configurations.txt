@@ -1,0 +1,12 @@
+# MSYS2
+cd /d/Work/cat && rm -rf build & cmake -Bbuild -G"Unix Makefiles" -S. && cmake --build build && rm -rf build && cmake -Bbuild -G"Unix Makefiles" -S. -DUNICODE_LIB_SHARED=ON && cmake --build build && rm -rf build && cmake -Bbuild -G"Unix Makefiles" -S. -DUNICODE_LIB=OFF && cmake --build build
+# w64devkit
+cd D:/Work/cat && rm -rf build & cmake -Bbuild -G"Unix Makefiles" -S. && cmake --build build && rm -rf build && cmake -Bbuild -G"Unix Makefiles" -S. -DUNICODE_LIB_SHARED=ON && cmake --build build && rm -rf build && cmake -Bbuild -G"Unix Makefiles" -S. -DUNICODE_LIB=OFF && cmake --build build
+# VC++ 6.0
+cd /d D:\cat && rd /s /q build & mkdir build && cd build && cmake -G"NMake Makefiles" .. && nmake && cd .. && rd /s /q build && mkdir build && cd build && cmake -G"NMake Makefiles" .. -DUNICODE_LIB=OFF && nmake && cd .. && rd /s /q build && mkdir build && cd build && cmake -G"NMake Makefiles" .. -DUNICODE_LIB_SHARED=ON && nmake && cd ..
+# VS 2010
+cd /d D:\Work\cat && rd /s/q build & cmake -Bbuild -G"NMake Makefiles" -S. && cmake --build build && rd /s/q build && cmake -Bbuild -G"NMake Makefiles" -S. -DUNICODE_LIB_SHARED=ON && cmake --build build && rd /s/q build && cmake -Bbuild -G"NMake Makefiles" -S. -DUNICODE_LIB=OFF && cmake --build build
+# VS 2022
+cd /d D:\Work\cat && rd /s/q build & cmake -Bbuild -G"Ninja" -S. && cmake --build build && rd /s/q build && cmake -Bbuild -G"Ninja" -S. -DUNICODE_LIB_SHARED=ON && cmake --build build && rd /s/q build && cmake -Bbuild -G"Ninja" -S. -DUNICODE_LIB=OFF && cmake --build build
+# Linux
+cd cat && rm -rf build & cmake -Bbuild -G"Ninja" -S. -DUNICODE_LIB=OFF && cmake --build build && rm -rf build && cmake -Bbuild -G"Ninja" -S. -DCMAKE_TOOLCHAIN_FILE=cmake/Linux-GCC.cmake && cmake --build build && rm -rf build&& cmake -Bbuild -G"Ninja" -S. -DCMAKE_TOOLCHAIN_FILE=cmake/Linux-GCC.cmake -DUNICODE_LIB=OFF && cmake --build build && rm -rf build && cmake -Bbuild -G"Ninja" -S. -DCMAKE_TOOLCHAIN_FILE=cmake/Linux-GCC.cmake -DUNICODE_LIB_SHARED=ON && cmake --build build && rm -rf build && cmake -Bbuild -G"Ninja" -S. -DCMAKE_TOOLCHAIN_FILE=cmake/Linux-Clang.cmake && cmake --build build && rm -rf build && cmake -Bbuild -G"Ninja" -S. -DCMAKE_TOOLCHAIN_FILE=cmake/Linux-Clang.cmake -DUNICODE_LIB=OFF && cmake --build build && rm -rf build && cmake -Bbuild -G"Ninja" -S. -DCMAKE_TOOLCHAIN_FILE=cmake/Linux-Clang.cmake -DUNICODE_LIB_SHARED=ON && cmake --build build

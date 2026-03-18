@@ -78,6 +78,10 @@ EXPORTS
 	__p__wpgmptr
 	__pioinfo
 	__pxcptinfoptrs
+	__rt_sdiv
+	__rt_udiv
+	__rt_sdiv10
+	__rt_udiv10
 	__set_app_type
 	__setlc_active
 	__setusermatherr
