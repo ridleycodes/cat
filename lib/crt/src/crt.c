@@ -29,6 +29,12 @@ FILE* (__cdecl * __imp____acrt_iob_func)(unsigned) = __acrt_iob_func;
 #ifdef _MSC_VER
 int _fltused = 1;
 #endif /* _MSC_VER */
+extern __declspec(dllimport) signed int time(signed int *second);
+signed int __cdecl __time32(signed int *second) {  return time(second); }
+signed int (__cdecl * _imp___time32)(signed int*) = __time32;
+signed int (__cdecl * _imp____time32)(signed int*) = __time32;
+signed int (__cdecl * __imp___time32)(signed int*) = __time32;
+signed int (__cdecl * __imp____time32)(signed int*) = __time32;
 
 #ifdef __LEGACY_CRT_CRT_IS_DLL
 extern int __stdcall DllMain(void* hinstDLL, unsigned long fdwReason, void* lpReserved);
